@@ -4,13 +4,16 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { MyApp } from "./app.component";
+import { TabsPage, GuardadosPage, HomePage, MapaPage } from "../pages/index.paginas";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    TabsPage,
+    GuardadosPage,
+    HomePage,
+    MapaPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,10 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    TabsPage,
+    GuardadosPage,
+    HomePage,
+    MapaPage
   ],
   providers: [
     StatusBar,
